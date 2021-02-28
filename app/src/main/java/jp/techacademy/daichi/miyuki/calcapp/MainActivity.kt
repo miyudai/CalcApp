@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val intent = Intent(this, MainActivity2::class.java)
                 intent.putExtra("VALUE1", editText1.getText().toString().toDouble())
                 intent.putExtra("VALUE2", editText2.getText().toString().toDouble())
+                
                 if (v?.getId() == R.id.button1) {
                     intent.putExtra("Result", "+")
                 } else if (v?.getId() == R.id.button2) {
